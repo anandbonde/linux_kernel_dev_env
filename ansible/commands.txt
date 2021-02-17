@@ -1,2 +1,5 @@
 # To apt update and upgrade all the hosts
 ansible-playbook ~/github/linux_kernel_dev_env/ansible/playbooks/apt_update_upgrade.yml --ask-pass --ask-become-pass -i ~/github/linux_kernel_dev_env/ansible/hosts
+
+# To install kernel development essentials
+ansible-playbook ~/github/linux_kernel_dev_env/ansible/playbooks/kernel_dev_essentials.yml --ask-pass --ask-become-pass -i ~/github/linux_kernel_dev_env/ansible/hosts

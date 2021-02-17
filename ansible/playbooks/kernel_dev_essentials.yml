@@ -1,0 +1,20 @@
+---
+- name: Kernel Development essential package installation
+  hosts: kdev_hosts
+  become: true
+  tasks:
+  - name: Install build essentials
+    apt:
+      pkg:
+      - bison
+      - build-essential
+      - cscope
+      - flex
+      - git
+      - git-email
+      - libncurses-dev
+      - libssl-dev
+      - vim
+      - ccache
+      - distcc
+      state: present
