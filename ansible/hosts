@@ -1,0 +1,4 @@
+[hosts]
+	[kdev_hosts]
+	moon
+	mercury
