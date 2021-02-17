@@ -1,0 +1,6 @@
+[sendmail]
+	smtpserver = smtp.gmail.com
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpuser = anand.bonde
+	smtppass = <enter_your_password_here>

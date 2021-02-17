@@ -1,9 +1,9 @@
 ---
 - name: Kernel Development essential package installation
   hosts: kdev_hosts
-  become: true
   tasks:
   - name: Install build essentials
+    become: true
     apt:
       pkg:
       - bison
@@ -18,3 +18,18 @@
       - ccache
       - distcc
       state: present
+
+  - name: Ensure that the ~/.ccache dir. exists.
+    file:
+      path: ~/.ccache/
+      state: directory
+
+  - name: Copy ccache.conf
+    copy:
+      src: ~/github/linux_kernel_dev_env/config/ccache.conf
+      dest: ~/.ccache/ccache.conf
+
+  - name: Copy .gitconfig
+    copy:
+      src: ~/github/linux_kernel_dev_env/config/.gitconfig
+      dest: ~/.gitconfig
