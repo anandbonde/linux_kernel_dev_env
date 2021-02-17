@@ -10,6 +10,5 @@ yes '' | make oldconfig
 echo "Set distcc hosts"
 export DISTCC_HOSTS="localhost mercury"
 
-
 echo "Build"
 make CC="ccache distcc gcc" -j 4 deb-pkg LOCALVERSION=-ab-stable
