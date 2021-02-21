@@ -8,15 +8,21 @@
       pkg:
       - bison
       - build-essential
+      - ccache
       - cscope
+      - distcc
+      - distcc-pump
+      - distccmon-gnome
+      - dmucs
       - flex
       - git
       - git-email
+      - libiberty-dev
       - libncurses-dev
       - libssl-dev
+      - nmap
+      - python3-dev
       - vim
-      - ccache
-      - distcc
       state: present
 
   - name: Ensure that the ~/.ccache dir. exists.
