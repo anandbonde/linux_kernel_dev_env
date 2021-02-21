@@ -1,5 +1,5 @@
 alias gd='git diff head'
 alias glp='git log --pretty=oneline'
-alias gp='git push'
+alias gp='git pull'
 alias grm='git rebase master'
 alias gs='git status'
