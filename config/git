@@ -4,3 +4,7 @@
 	smtpencryption = tls
 	smtpuser = anand.bonde
 	smtppass = <enter_your_password_here>
+
+[user]
+	name = "Anand Bonde"
+	email = "anand.bonde@gmail.com"
