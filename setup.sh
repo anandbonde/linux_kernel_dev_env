@@ -28,5 +28,5 @@ cp ./config/ccache ~/.ccache
 
 echo "TODOs: Don't forget these steps..."
 echo "	- source ~/.bashrc"
-echo "	- Add git password in ~/.gitconfig"
+echo "	- Update ~/.gitconfig"
 echo "	- Run :PlugInstall from inside vim"
