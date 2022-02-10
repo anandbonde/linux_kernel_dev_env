@@ -1,0 +1,15 @@
+#
+# Modified by AnandB2
+set -o vi
+export PS1='\W> '
+
+# Git aliases
+alias gb='git branch'
+alias gd='git diff head'
+alias glp='git log --pretty=oneline'
+alias gp='git pull'
+alias grm='git rebase master'
+alias gs='git status'
+
+# Other aliases
+alias u='sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y'
