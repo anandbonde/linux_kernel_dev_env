@@ -8,6 +8,8 @@ echo "Installing pkgs..."
 pkgs=(
 	build-essential
 	ccache
+	cscope
+	ctags
 	distcc
 	dwarves
 	tmux
