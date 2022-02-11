@@ -28,6 +28,10 @@ cat ./config/git_aliases >> ~/.bashrc
 echo "Configuring ccache"
 cp ./config/ccache ~/.ccache
 
+echo "Configuring vim"
+./scripts/vim.sh
+cp ./config/vimrc ~/.vimrc
+
 echo "TODOs: Don't forget these steps..."
 echo "	- source ~/.bashrc"
 echo "	- Update ~/.gitconfig"

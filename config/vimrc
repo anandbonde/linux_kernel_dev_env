@@ -1,0 +1,11 @@
+" Modified by AnandB2
+set nu
+set ai
+set hls
+set incsearch
+set ts=4
+set sw=4
+
+call plug#begin()
+Plug 'kien/ctrlp.vim'
+call plug#end()
