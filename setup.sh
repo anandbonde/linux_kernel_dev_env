@@ -6,12 +6,17 @@ read -r -p "Continue? (enter y/N) " should_continue
 
 echo "Installing pkgs..."
 pkgs=(
+	bison
 	build-essential
 	ccache
 	cscope
 	ctags
 	distcc
 	dwarves
+	flex
+	grub-customizer
+	libssl-dev
+	libelf-dev
 	tmux
 	vim
 	zstd
@@ -26,7 +31,8 @@ cat ./config/bashrc >> ~/.bashrc
 cat ./config/git_aliases >> ~/.bashrc
 
 echo "Configuring ccache"
-cp ./config/ccache ~/.ccache
+mkdir ~/.ccache
+cp ./config/ccache ~/.ccache/ccache.conf
 
 echo "Configuring vim"
 ./scripts/vim.sh
