@@ -1,10 +1,17 @@
-echo "Configuring bash..."
-cat ./config/bashrc >> ~/.bashrc
-cat ./config/git_aliases >> ~/.bashrc
+#!/bin/bash
+set -e
 
-echo "Configuring vim"
-./scripts/env_setup/vim.sh
-cp ./config/vimrc ~/.vimrc
+echo "configuring bash..."
+cat ../../config/bashrc >> ~/.bashrc
+cat ../../config/git_aliases >> ~/.bashrc
+
+echo "configuring vim"
+sudo apt install curl vim -y
+./vim.sh
+cp ../../config/vimrc ~/.vimrc
+
+echo "installing necessary pkgs"
+sudo apt install openssh-server ansible sshpass -y
 
 echo "TODOs: Don't forget these steps..."
 echo "	- source ~/.bashrc"
