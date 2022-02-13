@@ -21,7 +21,7 @@
         - git
         - git-email
         - grub-customizer
-        - grub-customizer
+        - indicator-cpufreq
         - libelf-dev
         - libncurses-dev
         - libssl-dev
