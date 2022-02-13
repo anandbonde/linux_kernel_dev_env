@@ -12,7 +12,7 @@ backup_existing_vim_settings() {
 }
 
 copy_vim_settings() {
-	CONFIG_DIR="./config/common"
+	CONFIG_DIR="../config/common"
 	cat ./${CONFIG_DIR}/vimrc >> ~/.vimrc
 }
 

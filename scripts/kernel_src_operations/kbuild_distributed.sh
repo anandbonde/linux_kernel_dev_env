@@ -7,7 +7,7 @@ git clean -fdx
 
 echo "configuring"
 cp /boot/config-$(uname -r) .config
-yes "" | make LSMOD="/tmp/my-lsmod" localmodconfig
+yes "" | make localmodconfig
 
 echo "disabling unnecessary config"
 scripts/config --disable DEBUG_INFO

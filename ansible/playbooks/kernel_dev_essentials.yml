@@ -1,30 +1,35 @@
 ---
-- name: Kernel Development essential package installation
+- name: Other essential package installation
   hosts: kdev_hosts
   tasks:
-  - name: Install build essentials
+  - name: Install other essentials
     become: true
     apt:
       pkg:
-      - bison
-      - build-essential
-      - ccache
-      - cscope
-      - ctags
-      - distcc
-      - distcc-pump
-      - distccmon-gnome
-      - dmucs
-      - dwarves
-      - flex
-      - git
-      - git-email
-      - libiberty-dev
-      - libncurses-dev
-      - libssl-dev
-      - nmap
-      - python3-dev
-      - vim
+        - bison
+        - build-essential
+        - build-essential
+        - ccache
+        - cscope
+        - ctags
+        - curl
+        - distcc
+        - distccmon-gnome
+        - distcc-pump
+        - dwarves
+        - flex
+        - git
+        - git-email
+        - grub-customizer
+        - grub-customizer
+        - libelf-dev
+        - libncurses-dev
+        - libssl-dev
+        - lm-sensors
+        - nmap
+        - python3-dev
+        - tmux
+        - vim
       state: present
 
   - name: Ensure that the ~/.ccache dir. exists.
