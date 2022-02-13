@@ -11,13 +11,15 @@ Scripts:
 
 	refer to README.txt in the ansible folder
 
-- kernel_source_operations/get_stable_kernel_source.sh
+- kernel_source_operations
 
-	gets kernel source for the stable branch, you may have to switch to latest
-	kernel branch (e.g. git checkout linux-5.16.y)
+	- get_stable_kernel_source.sh
 
-- kernel_build_distributed.sh
+		gets kernel source for the stable branch, you may have to switch to latest
+		kernel branch (e.g. git checkout linux-5.16.y)
 
-	builds kernel for debian (deb pkg) and installs them; this script uses
-	multiple nodes (if configured) for a faster/distributed build
+	- kernel_build_distributed.sh
+
+		builds kernel for debian (deb pkg) and installs them; this script uses
+		multiple nodes (if configured) for a faster/distributed build
 
