@@ -10,10 +10,12 @@
       - build-essential
       - ccache
       - cscope
+      - ctags
       - distcc
       - distcc-pump
       - distccmon-gnome
       - dmucs
+      - dwarves
       - flex
       - git
       - git-email
@@ -37,5 +39,5 @@
 
   - name: Copy .gitconfig
     copy:
-      src: ~/github/linux_kernel_dev_env/config/.gitconfig
+      src: ~/github/linux_kernel_dev_env/config/git.conf
       dest: ~/.gitconfig
