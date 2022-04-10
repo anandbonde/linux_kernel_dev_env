@@ -19,7 +19,7 @@ echo "setting env"
 export DISTCC_HOSTS="localhost"
 
 echo "building"
-make CC="ccache distcc gcc" -j $(nproc) deb-pkg LOCALVERSION=-ab-stable
+make CC="ccache distcc gcc" -j $(nproc) deb-pkg LOCALVERSION=-ab-bpf-enabled
 
 echo "installing"
 cd ..
