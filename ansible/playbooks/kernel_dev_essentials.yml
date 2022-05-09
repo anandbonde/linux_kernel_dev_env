@@ -11,7 +11,7 @@
         - build-essential
         - ccache
         - cscope
-        - ctags
+        - exuberant-ctags
         - curl
         - distcc
         - distccmon-gnome
@@ -20,7 +20,6 @@
         - flex
         - git
         - git-email
-        - grub-customizer
         - indicator-cpufreq
         - libelf-dev
         - libncurses-dev
